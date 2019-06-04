@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="feeds_data">
-        <item>http://p9-dy.bytecdn.cn/large/1781c00009290d397cee0.jpeg</item>
-        <item>http://p3-dy.bytecdn.cn/large/17813000749263c373122.jpeg</item>
-        <item>http://p9-dy.bytecdn.cn/large/1777d000bfcc05a16a217.jpeg</item>
-        <item>http://p9-dy.bytecdn.cn/large/17103001444eb7155a3e2.jpeg</item>
-        <item>http://p9-dy.bytecdn.cn/large/16f97000f316010ea9551.jpeg</item>
-        <item>http://p3-dy.bytecdn.cn/large/1b8dc0000ebddb1161df1.jpeg</item>
-        <item>http://p9-dy.bytecdn.cn/large/17700001975c105e41ae1.jpeg</item>
+        <item>https://p9-dy.bytecdn.cn/large/1781c00009290d397cee0.jpeg</item>
+        <item>https://p3-dy.bytecdn.cn/large/17813000749263c373122.jpeg</item>
+        <item>https://p9-dy.bytecdn.cn/large/1777d000bfcc05a16a217.jpeg</item>
+        <item>https://p9-dy.bytecdn.cn/large/17103001444eb7155a3e2.jpeg</item>
+        <item>https://p9-dy.bytecdn.cn/large/16f97000f316010ea9551.jpeg</item>
+        <item>https://p3-dy.bytecdn.cn/large/1b8dc0000ebddb1161df1.jpeg</item>
+        <item>https://p9-dy.bytecdn.cn/large/17700001975c105e41ae1.jpeg</item>
     </string-array>
 
     <string-array name="post_data_0">
