@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="feeds_data">
+        <item>http://p9-dy.bytecdn.cn/large/1781c00009290d397cee0.jpeg</item>
+        <item>http://p3-dy.bytecdn.cn/large/17813000749263c373122.jpeg</item>
+        <item>http://p9-dy.bytecdn.cn/large/1777d000bfcc05a16a217.jpeg</item>
+        <item>http://p9-dy.bytecdn.cn/large/17103001444eb7155a3e2.jpeg</item>
+        <item>http://p9-dy.bytecdn.cn/large/16f97000f316010ea9551.jpeg</item>
+        <item>http://p3-dy.bytecdn.cn/large/1b8dc0000ebddb1161df1.jpeg</item>
+        <item>http://p9-dy.bytecdn.cn/large/17700001975c105e41ae1.jpeg</item>
+    </string-array>
+
+    <string-array name="post_data_0">
+        <item>https://p3-dy.byteimg.com/aweme/300x400/bc1d0003daf90a2818f3.jpeg</item>
+        <item>https://p1-dy.byteimg.com/aweme/300x400/1138d0000a2e7ed1b132f.jpeg</item>
+        <item>https://p9-dy.byteimg.com/aweme/300x400/16187000367b8811ef8cb.jpeg</item>
+        <item>https://p9-dy.byteimg.com/aweme/300x400/17bd200056d42d71a03aa.jpeg</item>
+        <item>https://p9-dy.byteimg.com/aweme/300x400/26c0b0001199dad3fd025.jpeg</item>
+        <item>https://p3-dy.byteimg.com/aweme/300x400/178600012d3d205df6411.jpeg</item>
+    </string-array>
+
+    <string-array name="post_data_1">
+        <item>https://p9-dy.byteimg.com/aweme/300x400/269f30007d0f4a7413e63.jpeg</item>
+        <item>https://p3-dy.byteimg.com/aweme/300x400/23b540001046ce4830b79.jpeg</item>
+        <item>https://p3-dy.byteimg.com/aweme/300x400/208330007ae33a37e851d.jpeg</item>
+        <item>https://p3-dy.byteimg.com/aweme/300x400/178fe00110425f8328bd8.jpeg</item>
+        <item>https://p9-dy.byteimg.com/aweme/300x400/1787e00178eb4f51bbc00.jpeg</item>
+        <item>https://p9-dy.byteimg.com/aweme/300x400/179bb0016f1fc9c195ee0.jpeg</item>
+    </string-array>
+
+    <string-array name="post_data_2">
+        <item>https://p3-dy.byteimg.com/aweme/300x400/26bec0003e4782de5a23d.jpeg</item>
+        <item>https://p3-dy.byteimg.com/aweme/300x400/17b1200180941adcaedb7.jpeg</item>
+        <item>https://p1-dy.byteimg.com/aweme/300x400/17bc60000ce556b067bc1.jpeg</item>
+        <item>https://p3-dy.byteimg.com/aweme/300x400/267020009e9d34d233b08.jpeg</item>
+        <item>https://p9-dy.byteimg.com/aweme/300x400/17a8b001586f071214f1c.jpeg</item>
+        <item>https://p3-dy.byteimg.com/aweme/300x400/176cf00144478a097083c.jpeg</item>
+    </string-array>
+
+   <string-array name="post_data_3">
+       <item>https://p3-dy.byteimg.com/aweme/300x400/178860013d8cf40fa0c24.jpeg</item>
+       <item>https://p3-dy.byteimg.com/aweme/300x400/17103001444eb7155a3e2.jpeg</item>
+       <item>https://p3-dy.byteimg.com/aweme/300x400/1b2a1000800912072808a.jpeg</item>
+       <item>https://p9-dy.byteimg.com/aweme/300x400/10d22000af1678c560bf6.jpeg</item>
+   </string-array>
+
+    <string-array name="post_data_4">
+        <item>https://p9-dy.byteimg.com/aweme/300x400/1bc8e00038fb79e7c0b9f.jpeg</item>
+        <item>https://p9-dy.byteimg.com/aweme/300x400/16f97000f316010ea9551.jpeg</item>
+        <item>https://p3-dy.byteimg.com/aweme/300x400/bc0500081ec4fef0d1cb.jpeg</item>
+        <item>https://p9-dy.byteimg.com/aweme/300x400/17b79000f68ad76299348.jpeg</item>
+        <item>https://p9-dy.byteimg.com/aweme/300x400/26b3a00092ef60a1be129.jpeg</item>
+    </string-array>
+
+    <string-array name="post_data_5">
+        <item>https://p9-dy.byteimg.com/aweme/300x400/17b5a0010040fabb0ac0a.jpeg</item>
+        <item>https://p1-dy.byteimg.com/aweme/300x400/17be5000451a409317f21.jpeg</item>
+        <item>https://p3-dy.byteimg.com/aweme/300x400/17a36000e26740f844ecd.jpeg</item>
+        <item>https://p3-dy.byteimg.com/aweme/300x400/17acc001bee370b524a22.jpeg</item>
+        <item>https://p9-dy.byteimg.com/aweme/300x400/2671d0006c3f50aaa55c1.jpeg</item>
+    </string-array>
+
+    <string-array name="post_data_6">
+        <item>https://p3-dy.byteimg.com/aweme/300x400/17bc0000df411783c6590.jpeg</item>
+        <item>https://p9-dy.byteimg.com/aweme/300x400/17b66001c0f1e1fbc4907.jpeg</item>
+        <item>https://p3-dy.byteimg.com/aweme/300x400/26b3600008784ce5df67d.jpeg</item>
+        <item>https://p9-dy.byteimg.com/aweme/300x400/17a650013f2219f2635b7.jpeg</item>
+        <item>https://p1-dy.byteimg.com/aweme/300x400/17aa4001b7a4c09b3d5b5.jpeg</item>
+        <item>https://p3-dy.byteimg.com/aweme/300x400/266dc00040a50921b5df8.jpeg</item>
+    </string-array>
+</resources>
