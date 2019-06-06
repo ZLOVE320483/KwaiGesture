@@ -9,7 +9,7 @@ public interface PageIndicator extends ViewPager.OnPageChangeListener {
      *
      * @param view
      */
-    void setViewPager(ViewPager view);
+    void setViewPager(ViewPager view, ITabFactory factory);
 
     /**
      * Bind the indicator to a ViewPager.
@@ -17,7 +17,7 @@ public interface PageIndicator extends ViewPager.OnPageChangeListener {
      * @param view
      * @param initialPosition
      */
-    void setViewPager(ViewPager view, int initialPosition);
+    void setViewPager(ViewPager view, ITabFactory factory, int initialPosition);
 
     /**
      * <p>Set the current page of both the ViewPager and indicator.</p>
