@@ -4,10 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_red_light"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <com.zlove.gesture.widget.ScaleTransGestureView
+    <com.zlove.gesture.widget.indicator.KwaiViewPagerIndicator
+        android:id="@+id/view_pager_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
