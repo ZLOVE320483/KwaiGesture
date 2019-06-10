@@ -21,10 +21,10 @@ public abstract class BaseFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        initView();
+        initView(view);
     }
 
     protected abstract int getLayoutRes();
 
-    protected abstract void initView();
+    protected abstract void initView(View view);
 }

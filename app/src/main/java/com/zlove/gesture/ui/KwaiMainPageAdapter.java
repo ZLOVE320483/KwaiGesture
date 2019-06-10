@@ -19,8 +19,8 @@ public class KwaiMainPageAdapter extends FragmentPagerAdapter {
     public KwaiMainPageAdapter(FragmentManager fm, Context context) {
         super(fm);
         mFragments.add(new SameCityFragment());
-        mFragments.add(new DiscoverFragment());
         mFragments.add(new FollowFragment());
+        mFragments.add(new DiscoverFragment());
         mTitiles = context.getResources().getStringArray(R.array.main_tabs);
     }
 

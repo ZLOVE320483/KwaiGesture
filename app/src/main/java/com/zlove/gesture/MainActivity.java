@@ -1,18 +1,18 @@
 package com.zlove.gesture;
 
 import android.os.Bundle;
-import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 
 import com.zlove.gesture.ui.KwaiMainPageAdapter;
 import com.zlove.gesture.utils.UIUtils;
+import com.zlove.gesture.widget.KwaiMainViewPager;
 import com.zlove.gesture.widget.indicator.KwaiMainTabFactory;
 import com.zlove.gesture.widget.indicator.KwaiViewPagerIndicator;
 
 public class MainActivity extends AppCompatActivity {
 
     private KwaiViewPagerIndicator mIndicator;
-    private ViewPager mViewPager;
+    private KwaiMainViewPager mViewPager;
     private KwaiMainPageAdapter mPageAdapter;
     private KwaiMainTabFactory mTabFactory;
 

@@ -1,5 +1,7 @@
 package com.zlove.gesture.ui;
 
+import android.view.View;
+
 import com.zlove.gesture.R;
 
 public class FollowFragment extends BaseFragment {
@@ -10,7 +12,7 @@ public class FollowFragment extends BaseFragment {
     }
 
     @Override
-    protected void initView() {
+    protected void initView(View view) {
 
     }
 }

@@ -13,7 +13,7 @@
         android:layout_height="36dp"
         android:background="@color/main_tab_bg"/>
 
-    <android.support.v4.view.ViewPager
+    <com.zlove.gesture.widget.KwaiMainViewPager
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
