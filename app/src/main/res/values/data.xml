@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <string-array name="main_tabs">
+        <item>同城</item>
+        <item>关注</item>
+        <item>发现</item>
+    </string-array>
+
     <string-array name="feeds_data">
         <item>https://p9-dy.bytecdn.cn/large/1781c00009290d397cee0.jpeg</item>
         <item>https://p3-dy.bytecdn.cn/large/17813000749263c373122.jpeg</item>
