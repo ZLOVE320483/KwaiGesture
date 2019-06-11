@@ -9,7 +9,8 @@ import android.view.MotionEvent;
 
 public class KwaiMainViewPager extends ViewPager {
 
-    private int lastX, lastY;
+    private float downX;    //按下时 的X坐标
+    private float downY;    //按下时 的Y坐标
 
     public KwaiMainViewPager(@NonNull Context context) {
         super(context);
@@ -21,25 +22,24 @@ public class KwaiMainViewPager extends ViewPager {
 
     @Override
     public boolean onInterceptTouchEvent(MotionEvent ev) {
-        int x = (int) ev.getRawX();
-        int y = (int) ev.getRawY();
-        int dealtX = 0;
-        int dealtY = 0;
-
+        //在触发时回去到起始坐标
+        float x = ev.getX();
+        float y = ev.getY();
         switch (ev.getAction()) {
             case MotionEvent.ACTION_DOWN:
                 // 保证子View能够接收到Action_move事件
                 getParent().requestDisallowInterceptTouchEvent(true);
+                downX = x;
+                downY = y;
                 break;
             case MotionEvent.ACTION_MOVE:
-                dealtX += Math.abs(x - lastX);
-                dealtY += Math.abs(y - lastY);
-                // 这里是够拦截的判断依据是左右滑动，读者可根据自己的逻辑进行是否拦截
-                if (dealtX >= dealtY) {
-                    return true;
+                float dx = x - downX;
+                float dy = y - downY;
+                if (Math.abs(dx) > 8 && Math.abs(dy) > 8) {
+                    if (Math.abs(dx) > Math.abs(dy)) {
+                        return true;
+                    }
                 }
-                lastX = x;
-                lastY = y;
                 break;
             case MotionEvent.ACTION_CANCEL:
                 break;
