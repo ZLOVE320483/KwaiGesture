@@ -2,24 +2,18 @@ package com.zlove.gesture.widget;
 
 import android.animation.ValueAnimator;
 import android.content.Context;
-import android.graphics.Canvas;
-import android.graphics.Color;
-import android.graphics.Paint;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
-import android.view.View;
 import android.view.animation.DecelerateInterpolator;
+import android.widget.FrameLayout;
 
-public class ScaleTransGestureView extends View {
+public class ScaleTransGestureView extends FrameLayout {
 
-    private Paint mPaint;
-
-    private float mStartX;
-    private float mCurX;
+    private float downX;    //按下时 的X坐标
+    private float downY;    //按下时 的Y坐标
     private float mScale = 1.0f;
-    private float mLastOffset = 0.0f;
 
     private boolean mSlideLeft;
 
@@ -37,45 +31,32 @@ public class ScaleTransGestureView extends View {
     }
 
     private void init() {
-        mPaint = new Paint();
-        mPaint.setColor(Color.BLUE);
-        mPaint.setStyle(Paint.Style.FILL);
-    }
-
-    @Override
-    protected void onDraw(Canvas canvas) {
-        super.onDraw(canvas);
-        canvas.drawRect(0, 0, getWidth(), getHeight(), mPaint);
     }
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
+        //在触发时回去到起始坐标
+        float x = event.getX();
+        float y = event.getY();
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
-                mStartX = event.getX();
+                downX = x;
+                downY = y;
                 break;
             case MotionEvent.ACTION_MOVE:
-                mCurX = event.getX();
-                float deltaX = mCurX - mStartX;
-
-                if (Math.abs(deltaX) > 20) {
-
-                    if (deltaX < 0) {
-                        Log.d("zlove", "<-----");
-                        if (!mSlideLeft) {
-                            mStartX = event.getX();
+                float dx = x - downX;
+                float dy = y - downY;
+                if (Math.abs(dx) > 8 && Math.abs(dy) > 8) {
+                    if (Math.abs(dx) > Math.abs(dy)) {
+                        if (dx < 0) {
+                            Log.d("zlove", "<-----");
+                            mSlideLeft = true;
+                        } else {
+                            Log.d("zlove", "----->");
+                            mSlideLeft = false;
                         }
-                        mSlideLeft = true;
-                    } else {
-                        Log.d("zlove", "----->");
-                        if (mSlideLeft) {
-                            mStartX = event.getX();
-                        }
-                        mSlideLeft = false;
+                        zoom(dx);
                     }
-                    Log.d("zlove", "deltaX  ||||||  " + deltaX);
-                    zoom(deltaX);
-
                 }
                 break;
             case MotionEvent.ACTION_UP:
@@ -88,7 +69,7 @@ public class ScaleTransGestureView extends View {
             default:
                 break;
         }
-        return true;
+        return super.onTouchEvent(event);
     }
 
     private void zoom(float moveOffset) {

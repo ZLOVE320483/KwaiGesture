@@ -140,7 +140,8 @@ public class KwaiViewPagerIndicator extends FrameLayout implements PageIndicator
                     curSelectTab.setSelected(true);
                     mLastSelectTab = curSelectTab;
                 }
-
+                mViewPager.setScaleX(1.0f);
+                mViewPager.setScaleY(1.0f);
             }
 
             @Override
