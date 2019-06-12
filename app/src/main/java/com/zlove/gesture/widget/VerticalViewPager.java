@@ -16,6 +16,7 @@ public class VerticalViewPager extends ViewPager {
     public VerticalViewPager(@NonNull Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         setPageTransformer(false, new DefaultTransformer());
+        setOverScrollMode(OVER_SCROLL_NEVER);
     }
 
     private MotionEvent swapTouchEvent(MotionEvent event) {
